@@ -1,4 +1,6 @@
 
+import SeekableVideo from "./seekable-video";
+
 const team = [
   ["Mark Warschauer", "Distinguished Professor of Education, UC Irvine"],
   ["Dana Saito-Stehberger", "Director of Curriculum and Instruction, Digital Learning Lab UC Irvine"],
@@ -22,7 +24,7 @@ export default function Home() {
             <p className="hero-lede">Science Inquiry Studio is a web-based environment that supports middle school students’ engagement in scientific inquiry and engineering design.</p>
             <a className="button button-primary" href="https://sinq.studio" target="_blank" rel="noreferrer">Try Science Inquiry Studio now <span aria-hidden="true">↗</span></a>
           </div>
-          <figure className="hero-video"><video controls playsInline preload="metadata" poster="/video-poster.jpg"><source src="/sinq-overview.mp4" type="video/mp4" />Your browser does not support embedded video.</video></figure>
+          <figure className="hero-video"><SeekableVideo /></figure>
         </div>
       </section>
 
