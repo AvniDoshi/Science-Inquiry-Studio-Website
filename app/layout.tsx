@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: "https://scienceinquirystudio.org",
     siteName: "Science Inquiry Studio",
     type: "website",
-    images: [{ url: "/og.png", width: 1536, height: 864, alt: "Science Inquiry Studio — Inquiry belongs in students’ hands." }],
+    images: [{ url: "/og.png", width: 1280, height: 720, alt: "Science Inquiry Studio overview" }],
   },
   twitter: {
     card: "summary_large_image",
