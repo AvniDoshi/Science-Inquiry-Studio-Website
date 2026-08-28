@@ -37,7 +37,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               <span><strong>Science Inquiry</strong><small>Studio</small></span>
             </a>
             <nav aria-label="Main navigation">
-              <a href="/#how-it-works">How it works</a>
               <a href="/people">People</a>
               <a className="nav-cta" href="https://sinq.studio" target="_blank" rel="noreferrer">Try SINQ <span aria-hidden="true">↗</span></a>
             </nav>
