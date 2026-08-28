@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { DM_Sans, Fraunces } from "next/font/google";
-import Link from "next/link";
 import "./globals.css";
 
 const dmSans = DM_Sans({ variable: "--font-sans", subsets: ["latin"] });
@@ -33,13 +32,13 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <a className="skip-link" href="#main-content">Skip to content</a>
         <header className="site-header">
           <div className="shell header-inner">
-            <Link className="brand" href="/" aria-label="Science Inquiry Studio home">
+            <a className="brand" href="/" aria-label="Science Inquiry Studio home">
               <span className="brand-mark" aria-hidden="true"><i /><i /><i /></span>
               <span><strong>Science Inquiry</strong><small>Studio</small></span>
-            </Link>
+            </a>
             <nav aria-label="Main navigation">
-              <Link href="/#how-it-works">How it works</Link>
-              <Link href="/people">People</Link>
+              <a href="/#how-it-works">How it works</a>
+              <a href="/people">People</a>
               <a className="nav-cta" href="https://sinq.studio" target="_blank" rel="noreferrer">Try SINQ <span aria-hidden="true">↗</span></a>
             </nav>
           </div>
@@ -48,14 +47,14 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <footer>
           <div className="shell footer-grid">
             <div>
-              <Link className="brand footer-brand" href="/">
+              <a className="brand footer-brand" href="/">
                 <span className="brand-mark" aria-hidden="true"><i /><i /><i /></span>
                 <span><strong>Science Inquiry</strong><small>Studio</small></span>
-              </Link>
+              </a>
               <p>Inquiry belongs in students’ hands.</p>
             </div>
             <div className="footer-links">
-              <Link href="/people">Research team</Link>
+              <a href="/people">Research team</a>
               <a href="https://sinq.studio" target="_blank" rel="noreferrer">Open SINQ Studio</a>
               <a href="https://www.digitallearninglab.org/" target="_blank" rel="noreferrer">Digital Learning Lab</a>
             </div>

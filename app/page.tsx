@@ -1,4 +1,3 @@
-import Link from "next/link";
 
 const team = [
   ["Mark Warschauer", "Distinguished Professor of Education, UC Irvine"],
@@ -33,7 +32,7 @@ export default function Home() {
       </div></div></section>
 
       <section id="people" className="home-people section-pad"><div className="shell">
-        <div className="home-people-heading"><div><p className="section-number">Research Team</p><h2>People behind the project</h2></div><Link className="button button-secondary" href="/people">View people page <span aria-hidden="true">→</span></Link></div>
+        <div className="home-people-heading"><div><p className="section-number">Research Team</p><h2>People behind the project</h2></div><a className="button button-secondary" href="/people">View people page <span aria-hidden="true">→</span></a></div>
         <div className="home-team-list">{team.map(([name, role]) => <div key={name}><strong>{name}</strong><span>{role}</span></div>)}</div>
       </div></section>
 
